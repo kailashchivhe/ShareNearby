@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wave"
+        tools:context=".ui.AdvertiserFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_requested_devices"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:padding="8dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/empty"
+                android:visibility="gone"
+                app:lottie_loop="true" />
+
+        </RelativeLayout>
+
+
+        <!-- Buttons Section -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_start_advertising"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Advertising"
+            android:backgroundTint="@color/hamlet"
+            android:padding="16dp"
+            app:cornerRadius="12dp"
+            android:layout_margin="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_stop_advertising"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Advertising"
+            android:backgroundTint="@color/hamlet"
+            android:visibility="gone"
+            app:cornerRadius="12dp"
+            android:padding="16dp"
+            android:layout_margin="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_show_connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Connected Devices"
+            android:backgroundTint="@color/hamlet"
+            android:visibility="gone"
+            app:cornerRadius="12dp"
+            android:padding="16dp"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShareNearby" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.ShareNearby" parent="Base.Theme.ShareNearby" />
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:headerDividersEnabled">true</item>
+        <item name="android:background">@color/hamlet</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+</resources>
